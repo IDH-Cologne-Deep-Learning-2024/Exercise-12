@@ -12,4 +12,4 @@ Run a second experiment, where you fine-tune your chosen BERT model on the train
 
 Commit your changes and push them to the branch with the name of your GitHub account.
 
-Deadline for this exercise is December 19, 2024, 08:00:00 CET.
+Deadline for this exercise is January 23, 2025, 08:00:00 CET.
