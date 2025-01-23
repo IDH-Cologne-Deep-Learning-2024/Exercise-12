@@ -10,11 +10,11 @@ df = pd.read_csv("gmb.csv", sep=",", encoding='unicode_escape')
 df = df.head(8000)
 df = df.dropna()
 
-X = df.Word.astype(str).tolist()
-y_ner = df.Tag.tolist()
-X_train, X_test, y_train, y_test = train_test_split(X, y_ner, test_size=0.2, random_state=42)
+X = df["Word"].astype(str).tolist()
+y_tag = df["Tag"].tolist()
+X_train, X_test, y_train, y_test = train_test_split(X, y_tag, test_size=0.2, random_state=42)
 
-unique_tags = list(set(y_ner))
+unique_tags = list(set(y_tag))
 label_map = {tag: idx for idx, tag in enumerate(unique_tags)}
 num_labels = len(unique_tags)
 
